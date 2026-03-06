@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('clone git'){
             steps {
-            git https://github.com/jadala-vijay/nodejs-getting-started
+            git 'https://github.com/jadala-vijay/nodejs-getting-started.git'
             }
         }
 
         stage('install dep') {
             steps {
-            sh 'npm istall'
+            sh 'npm install'
             }
         }
 
