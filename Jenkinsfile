@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clone git'){
             steps {
-            git 'https://github.com/jadala-vijay/nodejs-getting-started.git'
+            git  branch: 'main' url: 'https://github.com/jadala-vijay/nodejs-getting-started.git'
             }
         }
 
